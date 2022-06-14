@@ -1126,3 +1126,7 @@ function promptCommand() {
   }
 
 }
+
+function goBack() {
+  window.location.href = "https://yjrenk9.github.io/art101/drawing_machine.html";
+}

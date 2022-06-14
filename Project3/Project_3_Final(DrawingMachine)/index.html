@@ -8,6 +8,7 @@
   <meta charset="utf-8">
   <script src="sketch.js"></script>
   <script src="ghost.js"></script>
+
 </head>
 
 <body>
@@ -26,6 +27,7 @@
       </div>
     </li>
     <li onclick="toggleCommandBar()", id="clickableTab">Special Commands</li>
+    <li onclick="goBack()", id="clickableTab">Go Back</li>
     <br>
     <br>
     <div class="infosDiv"> <!-- represents infosDiv[0] -->
@@ -65,12 +67,14 @@
         <p>/toggle specialBrushMode [name_of_special_brush] </p>
         <p>To see the list of commands...</p>
         <p>/display specialBrushMode List </p>
-      <form class="" action="index.html" method="post">
+      <!-- <form class="" action="#" method="post"> -->
         <input type="text" name="commandBox" value="", id="commandPlease">
         <br>
         <br>
         <input type="button" name="activateCommand" value="Enter!", id="enterButton", onclick="promptCommand()">
-      </form>
+        <br>
+        <br>
+      <!-- </form> -->
     </div>
   </ul>
 </body>
