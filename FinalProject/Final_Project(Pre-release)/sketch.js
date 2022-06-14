@@ -640,8 +640,8 @@ function softwareOccupations() {
   if (ghostPlayer.greenValue >= 25 && ghostPlayer.magentaValue <= 15) {
     background(230, 250, 230);
     fill(0, 250, 0);
-    text("Technical Software\nCareers", width / 3, height / 6);
-    text("Hybrid Software\nCareers", width / 1.5, height / 6);
+    text("Technical Software\nOccupations", width / 3, height / 6);
+    text("Hybrid Software\nOccupations", width / 1.5, height / 6);
 
     textSize(width / 72);
 
@@ -680,8 +680,8 @@ function softwareOccupations() {
   } else if (ghostPlayer.magentaValue >= 25 && ghostPlayer.greenValue <= 15) {
     background(250, 230, 230);
     fill(255, 0, 127);
-    text("Hybrid Software\nCareers", width / 3, height / 6);
-    text("Artistic Software\nCareers", width / 1.5, height / 6);
+    text("Hybrid Software\nOccupations", width / 3, height / 6);
+    text("Artistic Software\nOccupations", width / 1.5, height / 6);
 
     textSize(width / 72);
 
@@ -720,9 +720,9 @@ function softwareOccupations() {
   } else {
     background(230, 230, 250);
     fill(60, 140, 250)
-    text("Technical Software\nCareers", width / 6, height / 6);
-    text("Hybrid Software\nCareers", width / 2, height / 6);
-    text("Artistic Software\nCareers", width / 1.25, height / 6);
+    text("Technical Software\nOccupations", width / 6, height / 6);
+    text("Hybrid Software\nOccupations", width / 2, height / 6);
+    text("Artistic Software\nOccupations", width / 1.25, height / 6);
 
     textSize(width / 72);
 
