@@ -68,6 +68,9 @@ let bgc;
 let ghostColor;
 let ghostFaceColor;
 
+let button;
+let backButton;
+
 let ghostCover = false;
 
 function setup() {
@@ -105,8 +108,13 @@ function setup() {
 
   // the button
   button = createButton("click to randomize ghosts");
-  button.position((windowWidth / 1.125) / 2.125, (windowHeight / 1.125) / 1);
+  button.position((windowWidth) / 2.5, (windowHeight / 1.125) / 1);
   button.mousePressed(randomizeGhost);
+
+  // the back button
+  backButton = createButton("<-");
+  backButton.position(windowWidth / 18, windowHeight / 1.125);
+  backButton.mousePressed(goBack);
 
   // the font
   textFont(ghostFont);
@@ -294,6 +302,10 @@ function randomizeGhost() {
 
 function blueGhostFinish() {
   ghostCover = false;
+}
+
+function goBack() {
+  window.location.href = "https://yjrenk9.github.io/art101/randomizer.html";
 }
 
 function preload() {
